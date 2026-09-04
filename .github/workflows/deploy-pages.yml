@@ -24,11 +24,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Preparar PWA v2.1.2
+      - name: Preparar PWA atual
         run: |
           rm -rf site
           mkdir site
-          unzip -q C32_Campo_iOS_PWA_v2.1.2.zip -d site
+          unzip -q C32_Campo_iOS_PWA_ATUAL.zip -d site
           test -f site/index.html
           test -f site/manifest.webmanifest
           test -f site/service-worker.js
